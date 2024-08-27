@@ -1,0 +1,9 @@
+    public void insertBook(String book, int index) {
+        if (index >= 0 && index <= bookList.size()) {
+            bookList.add(index, book);
+            System.out.println("Book added: " + book + " at index: " + index);
+            isEmpty = false;
+        } else {
+            System.out.println("Please enter a valid index: ");
+        }
+    }
